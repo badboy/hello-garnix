@@ -1,5 +1,7 @@
+use std::f64;
+
 fn main() {
-    let x = 3.14;
-    let y = 1_f64 / x;
+    let x = f64::consts::PI;
+    let _y = 1_f64 / x;
     println!("Hello, world!");
 }
