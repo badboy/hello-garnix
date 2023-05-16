@@ -86,16 +86,6 @@
           my-crate-fmt = craneLib.cargoFmt {
             inherit src;
           };
-
-
-          # Run tests with cargo-nextest
-          # Consider setting `doCheck = false` on `my-crate` if you do not want
-          # the tests to run twice
-          my-crate-nextest = craneLib.cargoNextest (commonArgs // {
-            inherit cargoArtifacts;
-            partitions = 1;
-            partitionType = "count";
-          });
         };
 
         packages = {
