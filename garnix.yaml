@@ -1,4 +1,3 @@
 builds:
   include:
-    # build for every system
-    - 'packages.*.hello-garnix'
+    - 'packages.x86_64-linux.hello-garnix'
